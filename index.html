@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Miss Pranavi Rayachuri ! 💜</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary-violet: #8B5CF6;
+      --primary-violet-light: #C4B5FD;
+      --primary-violet-dark: #7C3AED;
+      --secondary-lavender: #DDD6FE;
+      --accent-rose: #F472B6;
+      --accent-gold: #FCD34D;
+      --deep-purple: #5B21B6;
+      --soft-pink: #FBCFE8;
+      --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      --neutral-100: #ffffff;
+      --neutral-200: #F8FAFC;
+      --neutral-800: #475569;
+      --neutral-900: #1E293B;
+      
+      --font-primary: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-display: 'Playfair Display', serif;
+      --font-script: 'Dancing Script', cursive;
+      
+      --space-xs: 0.5rem;
+      --space-sm: 1rem;
+      --space-md: 1.5rem;
+      --space-lg: 2rem;
+      --space-xl: 3rem;
+      --space-2xl: 4rem;
+      
+      --radius-sm: 12px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-xl: 32px;
+      
+      --shadow-glow: 0 0 40px rgba(139, 92, 246, 0.3);
+      --shadow-elegant: 0 20px 40px rgba(139, 92, 246, 0.1);
+      
+      --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-primary);
+      line-height: 1.7;
+      color: var(--neutral-800);
+      background: 
+        radial-gradient(circle at 20% 80%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(244, 114, 182, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(196, 181, 253, 0.1) 0%, transparent 50%),
+        linear-gradient(135deg, #fef7ff 0%, #f3e8ff 25%, #e0e7ff 50%, #fce7f3 75%, #fdf2f8 100%);
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+      padding-bottom: 100px;
+    }
+
+    /* Auto-play Notification */
+    .autoplay-notification {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--gradient-2);
+      color: var(--neutral-100);
+      padding: 1rem 2rem;
+      border-radius: var(--radius-lg);
+      font-size: 0.9rem;
+      font-weight: 500;
+      z-index: 1001;
+      opacity: 0;
+      pointer-events: none;
+      transition: var(--transition-smooth);
+      box-shadow: var(--shadow-elegant);
+    }
+
+    .autoplay-notification.show {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    /* 🎵 SPOTIFY-STYLE MUSIC SECTION */
+    .music-section {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.95), rgba(124, 58, 237, 0.95));
+      backdrop-filter: blur(20px);
+      border-radius: var(--radius-xl);
+      padding: 2rem;
+      margin: 4rem 0;
+      color: var(--neutral-100);
+      box-shadow: var(--shadow-glow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .music-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.05) 50%, transparent 70%);
+      animation: shimmer 3s ease-in-out infinite;
+    }
+
+    @keyframes shimmer {
+      0%, 100% { transform: translateX(-100%); }
+      50% { transform: translateX(100%); }
+    }
+
+    .music-player-card {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    /* Song Info at Top */
+    .song-info-top {
+      text-align: center;
+      margin-bottom: 2rem;
+      width: 100%;
+    }
+
+    .song-title-main {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .song-artist-main {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      font-weight: 400;
+      margin-bottom: 0.3rem;
+    }
+
+    .song-album {
+      font-size: 0.9rem;
+      opacity: 0.7;
+      font-style: italic;
+    }
+
+    /* Main Controls */
+    .main-controls {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .control-btn-main {
+      background: rgba(255, 255, 255, 0.15);
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      font-size: 1.2rem;
+      color: var(--neutral-100);
+    }
+
+    .control-btn-main:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: scale(1.1);
+    }
+
+    .play-btn-main {
+      background: linear-gradient(135deg, var(--accent-rose), var(--accent-gold));
+      width: 70px;
+      height: 70px;
+      font-size: 1.8rem;
+      box-shadow: 0 8px 25px rgba(244, 114, 182, 0.4);
+    }
+
+    .play-btn-main:hover {
+      transform: scale(1.15);
+      box-shadow: 0 12px 35px rgba(244, 114, 182, 0.6);
+    }
+
+    /* Progress Section */
+    .progress-section-main {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    .progress-times {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+
+    .progress-bar-container {
+      width: 100%;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+      cursor: pointer;
+      position: relative;
+      margin-bottom: 1rem;
+    }
+
+    .progress-bar-main {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-gold), var(--accent-rose));
+      border-radius: 4px;
+      width: 0%;
+      transition: width 0.1s ease;
+      position: relative;
+    }
+
+    .progress-bar-main::after {
+      content: '';
+      position: absolute;
+      right: -8px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+      background: var(--neutral-100);
+      border-radius: 50%;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .progress-bar-container:hover .progress-bar-main::after {
+      opacity: 1;
+    }
+
+    /* Volume and Extra Controls */
+    .extra-controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 2.5rem;
+    }
+
+    .volume-section {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .volume-icon-main {
+      font-size: 1.3rem;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+
+    .volume-icon-main:hover {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+
+    .volume-slider-main {
+      width: 100px;
+      height: 6px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 3px;
+      outline: none;
+      cursor: pointer;
+      -webkit-appearance: none;
+    }
+
+    .volume-slider-main::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 16px;
+      height: 16px;
+      background: var(--neutral-100);
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .extra-actions {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .action-btn {
+      background: none;
+      border: none;
+      color: var(--neutral-100);
+      font-size: 1.1rem;
+      cursor: pointer;
+      opacity: 0.7;
+      transition: var(--transition-smooth);
+    }
+
+    .action-btn:hover {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+
+    /* 🖼️ ALBUM ARTWORK AT BOTTOM */
+    .album-artwork-bottom {
+      width: 280px;
+      height: 280px;
+      border-radius: var(--radius-lg);
+      object-fit: cover;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+      transition: var(--transition-smooth);
+      cursor: pointer;
+      border: 4px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .album-artwork-bottom:hover {
+      transform: scale(1.05) rotate(2deg);
+      box-shadow: 0 20px 60px rgba(139, 92, 246, 0.4);
+      border-color: var(--accent-gold);
+    }
+
+    .album-artwork-bottom.playing {
+      animation: subtle-pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes subtle-pulse {
+      0%, 100% { box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4); }
+      50% { box-shadow: 0 15px 40px rgba(139, 92, 246, 0.6), 0 0 30px rgba(244, 114, 182, 0.3); }
+    }
+
+    /* Spotify Integration Styles */
+    .spotify-info {
+      text-align: center;
+      margin-top: 1rem;
+      opacity: 0.8;
+    }
+
+    .spotify-logo {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 0.5rem;
+    }
+
+    .spotify-link {
+      color: var(--accent-gold);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: var(--transition-smooth);
+    }
+
+    .spotify-link:hover {
+      color: var(--neutral-100);
+      text-shadow: 0 0 10px var(--accent-gold);
+    }
+
+    /* Responsive Design for Spotify Player */
+    @media (max-width: 768px) {
+      .music-section {
+        padding: 1.5rem;
+        margin: 3rem 0;
+      }
+
+      .song-title-main {
+        font-size: 1.5rem;
+      }
+
+      .main-controls {
+        gap: 1.5rem;
+      }
+
+      .play-btn-main {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+      }
+
+      .control-btn-main {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+      }
+
+      .album-artwork-bottom {
+        width: 220px;
+        height: 220px;
+      }
+
+      .extra-controls {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .album-artwork-bottom {
+        width: 180px;
+        height: 180px;
+      }
+
+      .volume-slider-main {
+        width: 80px;
+      }
+    }
+
+    /* Animated Background Particles */
+    .particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .particle {
+      position: absolute;
+      background: var(--primary-violet);
+      border-radius: 50%;
+      opacity: 0.1;
+      animation: float-particle 20s infinite linear;
+    }
+
+    @keyframes float-particle {
+      0% { transform: translateY(100vh) rotate(0deg); }
+      100% { transform: translateY(-100px) rotate(360deg); }
+    }
+
+    /* Enhanced Hero Section */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: var(--gradient-1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="g"><stop offset="20%" stop-color="rgba(255,255,255,0.1)"/><stop offset="50%" stop-color="rgba(255,255,255,0.05)"/><stop offset="100%" stop-color="transparent"/></radialGradient></defs><circle cx="200" cy="200" r="100" fill="url(%23g)"/><circle cx="800" cy="300" r="80" fill="url(%23g)"/><circle cx="400" cy="700" r="120" fill="url(%23g)"/><circle cx="700" cy="800" r="90" fill="url(%23g)"/></svg>') no-repeat center center;
+      background-size: cover;
+      animation: gentle-move 30s ease-in-out infinite;
+    }
+
+    @keyframes gentle-move {
+      0%, 100% { transform: translateX(0) translateY(0); }
+      25% { transform: translateX(-20px) translateY(-10px); }
+      50% { transform: translateX(15px) translateY(-20px); }
+      75% { transform: translateX(-10px) translateY(10px); }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 0 2rem;
+    }
+
+    .hero h1 {
+      font-family: var(--font-script);
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-weight: 700;
+      color: var(--neutral-100);
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      margin-bottom: 1rem;
+      animation: text-glow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes text-glow {
+      0% { text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); }
+      100% { text-shadow: 0 4px 40px rgba(255, 255, 255, 0.5), 0 4px 20px rgba(0, 0, 0, 0.3); }
+    }
+
+    .hero p {
+      font-size: 1.4rem;
+      color: var(--neutral-100);
+      opacity: 0.95;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: var(--neutral-100);
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+      40% { transform: translateX(-50%) translateY(-10px); }
+      60% { transform: translateX(-50%) translateY(-5px); }
+    }
+
+    /* Container & Layout */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .section {
+      margin: 6rem 0;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: var(--transition-smooth);
+    }
+
+    .section.animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Glass Morphism Cards */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: var(--radius-lg);
+      padding: 3rem;
+      margin: 2rem 0;
+      box-shadow: var(--shadow-elegant);
+      transition: var(--transition-smooth);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .glass-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+      transition: left 0.8s ease;
+    }
+
+    .glass-card:hover::before {
+      left: 100%;
+    }
+
+    .glass-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: var(--shadow-glow);
+    }
+
+    /* Enhanced Typography */
+    h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: var(--deep-purple);
+      margin-bottom: 2rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--gradient-2);
+      border-radius: 2px;
+      transform: scaleX(0);
+      transition: transform 0.6s ease;
+    }
+
+    .section.animate h2::after {
+      transform: scaleX(1);
+    }
+
+    /* Birthday Moon Section */
+    .birthday-moon {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: var(--gradient-1);
+      border-radius: var(--radius-xl);
+      margin: 4rem 0;
+      color: var(--neutral-100);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .birthday-moon::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        rgba(255, 255, 255, 0.05) 10px,
+        rgba(255, 255, 255, 0.05) 20px
+      );
+      animation: slide 15s linear infinite;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+
+    .moon-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .moon-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid var(--accent-gold);
+      box-shadow: 0 0 30px rgba(252, 211, 77, 0.5);
+      margin: 2rem auto;
+      display: block;
+      transition: var(--transition-smooth);
+    }
+
+    .moon-image:hover {
+      transform: scale(1.1) rotate(5deg);
+      box-shadow: 0 0 50px rgba(252, 211, 77, 0.8);
+    }
+
+    .moon-text {
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      font-weight: 300;
+      opacity: 0.95;
+    }
+
+    /* 🖼️ ENHANCED INTERACTIVE GALLERY WITH CAPTIONS */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2.5rem;
+      margin-top: 3rem;
+    }
+
+    .gallery-item {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      position: relative;
+      box-shadow: var(--shadow-elegant);
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-15px) scale(1.02);
+      box-shadow: var(--shadow-glow);
+      border-color: var(--primary-violet-light);
+    }
+
+    .image-container {
+      position: relative;
+      aspect-ratio: 1;
+      overflow: hidden;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition-smooth);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.8), rgba(244, 114, 182, 0.8));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: var(--transition-smooth);
+      color: var(--neutral-100);
+      font-size: 3rem;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    /* 💜 BEAUTIFUL IMAGE CAPTIONS */
+    .image-caption {
+      padding: 1.5rem 2rem 2rem;
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(244, 114, 182, 0.05));
+      position: relative;
+    }
+
+    .caption-date {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--primary-violet);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .caption-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--deep-purple);
+      margin-bottom: 0.8rem;
+      line-height: 1.4;
+    }
+
+    .caption-description {
+      font-size: 0.95rem;
+      color: var(--neutral-800);
+      line-height: 1.6;
+      font-weight: 400;
+      opacity: 0.9;
+    }
+
+    .caption-emoji {
+      position: absolute;
+      top: -10px;
+      right: 1.5rem;
+      background: var(--gradient-2);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 15px rgba(244, 114, 182, 0.3);
+      border: 3px solid var(--neutral-100);
+    }
+
+    /* Fixed Love List - Better Contrast */
+    .love-list {
+      list-style: none;
+      display: grid;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .love-item {
+      background: linear-gradient(135deg, var(--primary-violet-light), var(--soft-pink));
+      color: var(--deep-purple);
+      padding: 2rem;
+      border-radius: var(--radius-md);
+      font-size: 1.1rem;
+      font-weight: 600;
+      transform: translateX(-50px);
+      opacity: 0;
+      transition: var(--transition-smooth);
+      position: relative;
+      overflow: hidden;
+      border: 2px solid var(--primary-violet-light);
+    }
+
+    .love-item.animate {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    .love-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%;
+      background: var(--primary-violet);
+      transition: width 0.6s ease;
+    }
+
+    .love-item::after {
+      content: '💜';
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.5rem;
+      opacity: 0;
+      transition: var(--transition-smooth);
+    }
+
+    .love-item:hover {
+      transform: translateX(10px) scale(1.02);
+      background: linear-gradient(135deg, var(--secondary-lavender), var(--primary-violet-light));
+      color: var(--deep-purple);
+      border-color: var(--primary-violet);
+    }
+
+    .love-item:hover::before {
+      width: 100%;
+      background: linear-gradient(90deg, var(--primary-violet), transparent);
+    }
+
+    .love-item:hover::after {
+      opacity: 1;
+      animation: heartBeat 0.6s ease-in-out;
+    }
+
+    @keyframes heartBeat {
+      0%, 100% { transform: translateY(-50%) scale(1); }
+      50% { transform: translateY(-50%) scale(1.2); }
+    }
+
+    /* 3D Counter */
+    .counter-section {
+      background: var(--gradient-1);
+      border-radius: var(--radius-xl);
+      padding: 4rem 2rem;
+      margin: 4rem 0;
+      color: var(--neutral-100);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .counter-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .counter-item {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: var(--radius-md);
+      padding: 2rem 1rem;
+      transition: var(--transition-smooth);
+      cursor: pointer;
+    }
+
+    .counter-item:hover {
+      transform: translateY(-10px) rotateY(10deg);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .counter-value {
+      font-size: 2.5rem;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .counter-label {
+      font-size: 1rem;
+      opacity: 0.9;
+      font-weight: 300;
+    }
+
+    /* Enhanced Modal */
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    .modal.show {
+      display: flex;
+    }
+
+    .modal-content {
+      background: var(--gradient-2);
+      color: var(--neutral-100);
+      padding: 4rem;
+      border-radius: var(--radius-xl);
+      text-align: center;
+      max-width: 500px;
+      width: 90%;
+      transform: scale(0.5) rotate(180deg);
+      opacity: 0;
+      transition: var(--transition-smooth);
+    }
+
+    .modal.show .modal-content {
+      transform: scale(1) rotate(0deg);
+      opacity: 1;
+    }
+
+    .btn {
+      background: var(--gradient-3);
+      color: var(--neutral-100);
+      border: none;
+      padding: 1rem 3rem;
+      border-radius: var(--radius-md);
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      margin-top: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      transition: all 0.6s ease;
+      transform: translate(-50%, -50%);
+    }
+
+    .btn:hover::before {
+      width: 300px;
+      height: 300px;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      body {
+        padding-bottom: 50px;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .counter-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .moon-image {
+        width: 150px;
+        height: 150px;
+      }
+
+      .image-caption {
+        padding: 1.2rem 1.5rem 1.5rem;
+      }
+
+      .caption-title {
+        font-size: 1rem;
+      }
+
+      .caption-description {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .counter-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    
+    @keyframes sparkle {
+      0% { opacity: 1; transform: translateY(0) scale(1); }
+      100% { opacity: 0; transform: translateY(-100px) scale(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Auto-play Notification -->
+  <div class="autoplay-notification" id="autoplayNotification">
+    🎵 Click anywhere to enable your favorite song! 💜
+  </div>
+
+  <!-- Hidden Audio Element -->
+  <audio id="birthdayAudio" loop preload="auto">
+    <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+    <source src="your-song-file.mp3" type="audio/mpeg">
+    <source src="your-song-file.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Animated Background Particles -->
+  <div class="particles" id="particles"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Happy Birthday, Miss Pranavi Rayachuri ! 💜</h1>
+      <p>19 Years of Pure Magic  </p>    
+        <p>Your Story Has Just Begun! ✨</p>
+    </div>
+    <div class="scroll-indicator">
+      <div style="font-size: 2rem;">↓</div>
+      <div style="font-size: 0.9rem; margin-top: 0.5rem;">Scroll to explore</div>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- Love Letter -->
+    <section class="section">
+      <div class="glass-card">
+        <h2>💌 A Letter From Hareharan</h2>
+        <p style="font-size: 1.2rem; line-height: 1.8;">
+Never Thought… But You Did<br>
+When I first messaged you,<br>
+I never thought <i>you’d be the one</i>.<br>
+The one who stayed through my ups and downs,<br>
+Who held me when I was low,<br>
+And made me feel seen when I felt invisible.<br><br>
+
+People come and go —<br>
+But you’ve got a place in my heart that no one else can ever touch.<br><br>
+
+Pandhi, You're Different.<br>
+Never imagined this bond would become <i>this strong</i>.<br>
+No therapist needed — because I’ve got <b>you</b>.<br>
+Even without meeting once,<br>
+You’ve made my days brighter.<br>
+Sometimes, I don’t need a solution,<br>
+Just your voice saying, “I’m here.”<br>
+And that’s enough.<br><br>
+
+You’re not just special —<br>
+<b>You’re irreplaceable.</b><br><br>
+
+No Promises, Just Us<br>
+Remember that deal?<br>
+We said no fake promises like “forever friends.”<br>
+We just agreed to <i>be real</i> with each other.<br>
+And look — 4 years later,<br>
+We're still here.<br><br>
+
+Let’s not count the years.<br>
+Let’s count the moments.<br>
+Till the last day of this friendship.<br><br>
+
+Just Know This<br>
+You’re not someone I’ll ever forget.<br>
+Not because of what you do,<br>
+But because of <i>who you are</i> to me.<br><br>
+
+Forever or not,<br>
+You’ll always be <b>my special one</b>.
+
+        </p>
+      </div>
+    </section>
+
+    <!-- 🎵 SPOTIFY-STYLE MUSIC PLAYER -->
+    <section class="section">
+      <div class="music-section">
+        <div class="music-player-card">
+          <!-- Song Info at Top -->
+          <div class="song-info-top">
+            <div class="song-title-main" id="songTitleMain">🎂 Happy Birthday Pandhi</div>
+            <div class="song-artist-main" id="songArtistMain">💜 From Hareharan with Love</div>
+            <div class="song-album" id="songAlbum">Birthday Special • 2025</div>
+          </div>
+
+          <!-- Main Controls -->
+          <div class="main-controls">
+            <button class="control-btn-main" id="prevBtnMain">⏮️</button>
+            <button class="play-btn-main" id="playButtonMain">▶️</button>
+            <button class="control-btn-main" id="nextBtnMain">⏭️</button>
+          </div>
+
+          <!-- Progress Section -->
+          <div class="progress-section-main">
+            <div class="progress-times">
+              <span id="currentTimeMain">0:00</span>
+              <span id="totalTimeMain">0:00</span>
+            </div>
+            <div class="progress-bar-container" id="progressContainerMain">
+              <div class="progress-bar-main" id="progressBarMain"></div>
+            </div>
+          </div>
+
+          <!-- Extra Controls -->
+          <div class="extra-controls">
+            <div class="volume-section">
+              <span class="volume-icon-main" id="volumeIconMain">🔊</span>
+              <input type="range" class="volume-slider-main" id="volumeSliderMain" min="0" max="100" value="70">
+            </div>
+            <div class="extra-actions">
+              <button class="action-btn" title="Shuffle">🔀</button>
+              <button class="action-btn" title="Repeat">🔁</button>
+              <button class="action-btn" title="Add to Playlist">➕</button>
+            </div>
+          </div>
+
+          <!-- Album Artwork at Bottom -->
+          <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=400&fit=crop" 
+               alt="Birthday Song Artwork" class="album-artwork-bottom" id="albumArtworkBottom">
+
+          <!-- Spotify Integration -->
+          <div class="spotify-info">
+            <a href="https://open.spotify.com/playlist/37i9dQZF1DX0XUsuxWHRQd" class="spotify-link" target="_blank">
+              🎵 Listen on Spotify
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Birthday Moon -->
+    <section class="section">
+      <div class="birthday-moon">
+        <div class="moon-content">
+          <h2 style="color: var(--neutral-100);">🌙 Your Birthday Moon - 2006</h2>
+          <img src="D:\BCA\26 july\moon 26 july.jpg" alt="Birthday Moon 2006" class="moon-image" id="moonImage">
+          <p class="moon-text">
+            This was the exact moon phase when you graced the world on July 26, 2006. <br>
+            A celestial witness to the beginning of your beautiful journey. 🌟
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🖼️ ENHANCED PHOTO GALLERY WITH BEAUTIFUL CAPTIONS -->
+    <section class="section">
+      <h2>📸 Our Memories</h2>
+      <div class="gallery">
+        <!-- Memory 1: First Meeting -->
+        <div class="gallery-item">
+          <div class="image-container">
+            <img src="D:\BCA\26 july\call image shape fix.jpg" alt="Our First Meeting">
+            <div class="gallery-overlay">💜</div>
+          </div>
+          <div class="image-caption">
+            <div class="caption-emoji">💫</div>
+            <div class="caption-date">🗓️ July 26, 2021 — The Beginning </div>
+            <div class="caption-title">TThe day everything changed.</div>
+            <div class="caption-description">
+              This is where it all began - our first long call. 
+              It wasn’t just a call — it was the start of something that still means the world to me.
+Me, you, and Viggi on conference… and somehow, that moment still lives rent free in my heart 💛 💫
+            </div>
+          </div>
+        </div>
+
+        <!-- Memory 2: Coffee Date -->
+        <div class="gallery-item">
+          <div class="image-container">
+            <img src="D:\BCA\26 july\neet pic.jpg" alt="Coffee & Conversations">
+            <div class="gallery-overlay">💜</div>
+          </div>
+          <div class="image-caption">
+            <div class="caption-emoji">💜</div>
+            <div class="caption-date">🗓️ May 7, 2023 </div>
+            <div class="caption-title"> — NEET Day, but We Forgot the Exam</div>
+            <div class="caption-description">
+              It was supposed to be a stressful exam day… but look at us.
+We ended up talking, laughing, and smiling like kids with no weight on our shoulders.
+That video call lasted longer than the exam vibe itself.
+That day, I realized — even on serious days, you're the peace I never wanna lose 💬💜 💭
+            </div>
+          </div>
+        </div>
+
+        <!-- Memory 3: Sunset Adventure -->
+        <div class="gallery-item">
+          <div class="image-container">
+            <img src="D:\BCA\26 july\same dress.jpg"alt="Sunset Adventures">
+            <div class="gallery-overlay">💜</div>
+          </div>
+          <div class="image-caption">
+            <div class="caption-emoji">🫶</div>
+            <div class="caption-date">🗓️One Random Night </div>
+            <div class="caption-title"> But Felt Like Magic</div>
+            <div class="caption-description">
+              You were home, I was home…
+yet we stayed up talking like we lived next door.
+No big reason, just a normal night — but we made it feel special.
+And, sometimes those random talks hit harder than anything.
+I didn’t need a reason to smile — I had you 🫶🌙
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Love List -->
+    <section class="section">
+      <h2>💭 100+ Reasons <br> Why You're My <br>Best Friend</h2>
+      <ul class="love-list">
+        <li class="love-item">💫 I don’t count reasons — I count memories with you.</li>
+        <li class="love-item">🫀 *You’re not my best friend because of reasons,<br>you’re my best friend because you’re you. 💜</li>
+      </ul>
+    </section>
+
+    <!-- Life Counter -->
+    <section class="section">
+      <div class="counter-section">
+        <h2 style="color: var(--neutral-100);">⏳ Your Beautiful Life in Numbers</h2>
+        <p style="font-size: 1.2rem; opacity: 0.9;">Since July 26, 2006 at 10 : 30 </p>
+        <div class="counter-grid" id="lifeCounter">
+          <div class="counter-item">
+            <span class="counter-value" id="breaths">Loading...</span>
+            <span class="counter-label">🌬️ Breaths</span>
+          </div>
+          <div class="counter-item">
+            <span class="counter-value" id="heartbeats">Loading...</span>
+            <span class="counter-label">💜 Heartbeats</span>
+          </div>
+          <div class="counter-item">
+            <span class="counter-value" id="seconds">Loading...</span>
+            <span class="counter-label">⏱️ Seconds</span>
+          </div>
+          <div class="counter-item">
+            <span class="counter-value" id="minutes">Loading...</span>
+            <span class="counter-label">⏰ Minutes</span>
+          </div>
+          <div class="counter-item">
+            <span class="counter-value" id="hours">Loading...</span>
+            <span class="counter-label">🕐 Hours</span>
+          </div>
+          <div class="counter-item">
+            <span class="counter-value" id="days">Loading...</span>
+            <span class="counter-label">📅 Days</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ 
+  <!-- Modal -->
+  <div id="certModal" class="modal">
+    <div class="modal-content">
+      <h2>🎖️Certificate of Pure Friendship</h2>
+      <p style="font-size: 1.1rem; line-height: 1.6;">
+        This certifies that
+<b>Pandhi</b> has been the <i>strongest and realest part</i> of my journey.
+She stayed, understood,
+and became the <b>safest place</b> —
+even without meeting once.
+
+Given with all my heart,
+by <b>Hareharan 💜</b>
+to the one who’s more than a best friend —
+my person. 💜✨
+      </p>
+      <button class="btn" onclick="closeModal()">Accept with Love 💖</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  
+  <script>
+    class EnhancedBirthdayPage {
+      constructor() {
+        this.birthDate = new Date("2006-07-26T03:30:00");
+        this.audio = document.getElementById('birthdayAudio');
+        this.playButtonMain = document.getElementById('playButtonMain');
+        this.volumeSliderMain = document.getElementById('volumeSliderMain');
+        this.volumeIconMain = document.getElementById('volumeIconMain');
+        this.progressBarMain = document.getElementById('progressBarMain');
+        this.progressContainerMain = document.getElementById('progressContainerMain');
+        this.currentTimeMain = document.getElementById('currentTimeMain');
+        this.totalTimeMain = document.getElementById('totalTimeMain');
+        this.autoplayNotification = document.getElementById('autoplayNotification');
+        this.albumArtworkBottom = document.getElementById('albumArtworkBottom');
+        this.isPlaying = false;
+        this.hasUserInteracted = false;
+        this.init();
+      }
+
+      init() {
+        this.setupAudio();
+        this.setupProgressBar();
+        this.setupAutoplay();
+        this.createParticles();
+        this.setupScrollAnimations();
+        this.startLifeCounter();
+        this.setupInteractiveElements();
+        this.launchCelebration();
+      }
+
+      setupAudio() {
+        // Set initial volume
+        this.audio.volume = this.volumeSliderMain.value / 100;
+
+        // Play button functionality
+        this.playButtonMain.addEventListener('click', () => {
+          this.hasUserInteracted = true;
+          this.hideAutoplayNotification();
+          this.togglePlayPause();
+        });
+
+        // Volume control
+        this.volumeSliderMain.addEventListener('input', (e) => {
+          const volume = e.target.value / 100;
+          this.audio.volume = volume;
+          this.updateVolumeIcon(volume);
+        });
+
+        // Volume icon click to mute/unmute
+        this.volumeIconMain.addEventListener('click', () => {
+          if (this.audio.volume > 0) {
+            this.audio.volume = 0;
+            this.volumeSliderMain.value = 0;
+            this.updateVolumeIcon(0);
+          } else {
+            this.audio.volume = 0.7;
+            this.volumeSliderMain.value = 70;
+            this.updateVolumeIcon(0.7);
+          }
+        });
+
+        // Audio events
+        this.audio.addEventListener('loadedmetadata', () => {
+          this.updateTotalTime();
+        });
+
+        this.audio.addEventListener('timeupdate', () => {
+          this.updateProgress();
+        });
+
+        this.audio.addEventListener('ended', () => {
+          this.playButtonMain.textContent = '▶️';
+          this.isPlaying = false;
+          this.albumArtworkBottom.classList.remove('playing');
+        });
+
+        // Album art animation when playing
+        this.audio.addEventListener('play', () => {
+          this.albumArtworkBottom.style.animation = 'rotate 4s linear infinite';
+          this.albumArtworkBottom.classList.add('playing');
+        });
+
+        this.audio.addEventListener('pause', () => {
+          this.albumArtworkBottom.style.animation = 'none';
+          this.albumArtworkBottom.classList.remove('playing');
+        });
+
+        // Previous and Next button functionality
+        document.getElementById('prevBtnMain').addEventListener('click', () => {
+          this.audio.currentTime = 0;
+        });
+
+        document.getElementById('nextBtnMain').addEventListener('click', () => {
+          this.audio.currentTime = this.audio.duration || 0;
+        });
+      }
+
+      setupProgressBar() {
+        this.progressContainerMain.addEventListener('click', (e) => {
+          const rect = this.progressContainerMain.getBoundingClientRect();
+          const percent = (e.clientX - rect.left) / rect.width;
+          const newTime = percent * this.audio.duration;
+          this.audio.currentTime = newTime;
+        });
+      }
+
+      setupAutoplay() {
+        // Show notification initially
+        setTimeout(() => {
+          if (!this.hasUserInteracted) {
+            this.showAutoplayNotification();
+          }
+        }, 3000);
+
+        // Try to auto-play on any user interaction
+        const enableAutoplay = () => {
+          if (!this.hasUserInteracted) {
+            this.hasUserInteracted = true;
+            this.hideAutoplayNotification();
+            this.audio.play().then(() => {
+              this.playButtonMain.textContent = '⏸️';
+              this.isPlaying = true;
+            }).catch(() => {
+              // Auto-play failed, user needs to click play
+            });
+          }
+        };
+
+        document.addEventListener('click', enableAutoplay, { once: true });
+        document.addEventListener('keydown', enableAutoplay, { once: true });
+        document.addEventListener('scroll', enableAutoplay, { once: true });
+      }
+
+      togglePlayPause() {
+        if (this.isPlaying) {
+          this.audio.pause();
+          this.playButtonMain.textContent = '▶️';
+          this.isPlaying = false;
+        } else {
+          this.audio.play().then(() => {
+            this.playButtonMain.textContent = '⏸️';
+            this.isPlaying = true;
+          }).catch(e => {
+            console.log('Audio play failed:', e);
+            alert('Unable to play audio. Please check your browser settings! 🎵');
+          });
+        }
+      }
+
+      updateProgress() {
+        if (this.audio.duration) {
+          const percent = (this.audio.currentTime / this.audio.duration) * 100;
+          this.progressBarMain.style.width = percent + '%';
+          this.currentTimeMain.textContent = this.formatTime(this.audio.currentTime);
+        }
+      }
+
+      updateTotalTime() {
+        this.totalTimeMain.textContent = this.formatTime(this.audio.duration);
+      }
+
+      formatTime(seconds) {
+        const mins = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return `${mins}:${secs.toString().padStart(2, '0')}`;
+      }
+
+      updateVolumeIcon(volume) {
+        if (volume === 0) {
+          this.volumeIconMain.textContent = '🔇';
+        } else if (volume < 0.5) {
+          this.volumeIconMain.textContent = '🔉';
+        } else {
+          this.volumeIconMain.textContent = '🔊';
+        }
+      }
+
+      showAutoplayNotification() {
+        this.autoplayNotification.classList.add('show');
+      }
+
+      hideAutoplayNotification() {
+        this.autoplayNotification.classList.remove('show');
+      }
+
+      createParticles() {
+        const particlesContainer = document.getElementById('particles');
+        const colors = ['#8B5CF6', '#C4B5FD', '#F472B6', '#DDD6FE'];
+        
+        for (let i = 0; i < 50; i++) {
+          const particle = document.createElement('div');
+          particle.className = 'particle';
+          particle.style.left = Math.random() * 100 + '%';
+          particle.style.width = particle.style.height = (Math.random() * 5 + 2) + 'px';
+          particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+          particle.style.animationDelay = Math.random() * 20 + 's';
+          particle.style.animationDuration = (Math.random() * 10 + 15) + 's';
+          particlesContainer.appendChild(particle);
+        }
+      }
+
+      setupScrollAnimations() {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('animate');
+              
+              // Animate love list items with stagger
+              if (entry.target.querySelector('.love-list')) {
+                const items = entry.target.querySelectorAll('.love-item');
+                items.forEach((item, index) => {
+                  setTimeout(() => {
+                    item.classList.add('animate');
+                  }, index * 100);
+                });
+              }
+            }
+          });
+        }, { threshold: 0.2 });
+
+        document.querySelectorAll('.section').forEach(section => {
+          observer.observe(section);
+        });
+      }
+
+      startLifeCounter() {
+        const updateCounter = () => {
+          const now = new Date();
+          const diff = now - this.birthDate;
+          
+          const seconds = Math.floor(diff / 1000);
+          const minutes = Math.floor(seconds / 60);
+          const hours = Math.floor(minutes / 60);
+          const days = Math.floor(hours / 24);
+          const breaths = Math.floor(seconds / 4);
+          const heartbeats = Math.floor(seconds * 1.2);
+
+          this.animateCounter('seconds', seconds);
+          this.animateCounter('minutes', minutes);
+          this.animateCounter('hours', hours);
+          this.animateCounter('days', days);
+          this.animateCounter('breaths', breaths);
+          this.animateCounter('heartbeats', heartbeats);
+        };
+
+        updateCounter();
+        setInterval(updateCounter, 1000);
+      }
+
+      animateCounter(id, value) {
+        const element = document.getElementById(id);
+        if (element) {
+          element.textContent = value.toLocaleString();
+        }
+      }
+
+      setupInteractiveElements() {
+        // Gallery interactions
+        document.querySelectorAll('.gallery-item').forEach(item => {
+          item.addEventListener('click', () => {
+            this.createMagicalEffect(item);
+          });
+        });
+
+        // Counter item interactions
+        document.querySelectorAll('.counter-item').forEach(item => {
+          item.addEventListener('click', () => {
+            this.createCounterEffect(item);
+          });
+        });
+
+        // Moon image interaction
+        const moonImage = document.getElementById('moonImage');
+        if (moonImage) {
+          moonImage.addEventListener('click', () => {
+            this.createMoonEffect(moonImage);
+          });
+        }
+
+        // Album artwork interaction
+        this.albumArtworkBottom.addEventListener('click', () => {
+          this.togglePlayPause();
+          this.createMagicalEffect(this.albumArtworkBottom);
+        });
+      }
+
+      createMagicalEffect(element) {
+        const rect = element.getBoundingClientRect();
+        const effects = ['💜', '✨', '💖', '🌟', '💫'];
+        
+        for (let i = 0; i < 15; i++) {
+          const effect = document.createElement('div');
+          effect.textContent = effects[Math.floor(Math.random() * effects.length)];
+          effect.style.position = 'fixed';
+          effect.style.left = (rect.left + Math.random() * rect.width) + 'px';
+          effect.style.top = (rect.top + Math.random() * rect.height) + 'px';
+          effect.style.fontSize = (Math.random() * 20 + 15) + 'px';
+          effect.style.pointerEvents = 'none';
+          effect.style.zIndex = '1000';
+          effect.style.animation = 'sparkle 2s ease-out forwards';
+          
+          document.body.appendChild(effect);
+          setTimeout(() => effect.remove(), 2000);
+        }
+      }
+
+      createCounterEffect(element) {
+        confetti({
+          particleCount: 30,
+          spread: 60,
+          origin: {
+            x: (element.getBoundingClientRect().left + element.getBoundingClientRect().width / 2) / window.innerWidth,
+            y: (element.getBoundingClientRect().top + element.getBoundingClientRect().height / 2) / window.innerHeight
+          },
+          colors: ['#8B5CF6', '#C4B5FD', '#F472B6', '#DDD6FE', '#FCD34D']
+        });
+      }
+
+      createMoonEffect(element) {
+        const rect = element.getBoundingClientRect();
+        confetti({
+          particleCount: 50,
+          spread: 80,
+          origin: {
+            x: (rect.left + rect.width / 2) / window.innerWidth,
+            y: (rect.top + rect.height / 2) / window.innerHeight
+          },
+          colors: ['#FCD34D', '#F59E0B', '#FBBF24']
+        });
+      }
+
+      launchCelebration() {
+        setTimeout(() => {
+          confetti({
+            particleCount: 150,
+            spread: 100,
+            origin: { y: 0.3 },
+            colors: ['#8B5CF6', '#C4B5FD', '#F472B6', '#DDD6FE', '#FCD34D']
+          });
+        }, 1000);
+
+        setTimeout(() => {
+          this.showModal();
+        }, 4000);
+      }
+
+      showModal() {
+        const modal = document.getElementById('certModal');
+        modal.classList.add('show');
+      }
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('certModal');
+      modal.classList.remove('show');
+      
+      // Epic celebration
+      const duration = 3000;
+      const animationEnd = Date.now() + duration;
+      const colors = ['#8B5CF6', '#C4B5FD', '#F472B6', '#DDD6FE', '#FCD34D'];
+
+      (function frame() {
+        confetti({
+          particleCount: 5,
+          angle: 60,
+          spread: 55,
+          origin: { x: 0 },
+          colors: colors
+        });
+        confetti({
+          particleCount: 5,
+          angle: 120,
+          spread: 55,
+          origin: { x: 1 },
+          colors: colors
+        });
+
+        if (Date.now() < animationEnd) {
+          requestAnimationFrame(frame);
+        }
+      }());
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      new EnhancedBirthdayPage();
+    });
+  </script>
+</body>
+</html>
