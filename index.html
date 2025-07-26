@@ -74,28 +74,36 @@
       padding-bottom: 100px;
     }
 
-    /* Auto-play Notification */
+    /* Enhanced Auto-play Notification */
     .autoplay-notification {
       position: fixed;
-      top: 20px;
+      top: 50%;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translate(-50%, -50%);
       background: var(--gradient-2);
       color: var(--neutral-100);
-      padding: 1rem 2rem;
+      padding: 2rem 3rem;
       border-radius: var(--radius-lg);
-      font-size: 0.9rem;
-      font-weight: 500;
+      font-size: 1.1rem;
+      font-weight: 600;
       z-index: 1001;
       opacity: 0;
       pointer-events: none;
       transition: var(--transition-smooth);
       box-shadow: var(--shadow-elegant);
+      text-align: center;
+      cursor: pointer;
+      max-width: 400px;
+      width: 90%;
     }
 
     .autoplay-notification.show {
       opacity: 1;
       pointer-events: all;
+    }
+
+    .autoplay-notification:hover {
+      transform: translate(-50%, -50%) scale(1.05);
     }
 
     /* 🎵 SPOTIFY-STYLE MUSIC SECTION */
@@ -1035,18 +1043,19 @@
 </head>
 
 <body>
-  <!-- Auto-play Notification -->
-
+  <!-- Enhanced Auto-play Notification -->
   <div class="autoplay-notification" id="autoplayNotification">
-    🎵 Click anywhere to enable your favorite song! 💜
+    <div>🎵 Click to Enable Birthday Music! 💜</div>
+    <div style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.9;">
+      Tap anywhere to start the celebration
+    </div>
   </div>
 
-  <!-- Hidden Audio Element -->
-<audio id="birthdayAudio" loop preload="auto">
-    <source src="dheema.mp3" type="audio/mpeg">
+  <!-- Updated Audio Element with GitHub Raw URL -->
+  <audio id="birthdayAudio" loop preload="auto" muted autoplay>
+    <source src="https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/raw/main/dheema.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
-</audio>
-
+  </audio>
 
   <!-- Animated Background Particles -->
   <div class="particles" id="particles"></div>
@@ -1072,44 +1081,44 @@
         <p style="font-size: 1.2rem; line-height: 1.8;">
 Never Thought… But You Did<br>
 When I first messaged you,<br>
-I never thought <i>you’d be the one</i>.<br>
+I never thought <i>you'd be the one</i>.<br>
 The one who stayed through my ups and downs,<br>
 Who held me when I was low,<br>
 And made me feel seen when I felt invisible.<br><br>
 
 People come and go —<br>
-But you’ve got a place in my heart that no one else can ever touch.<br><br>
+But you've got a place in my heart that no one else can ever touch.<br><br>
 
 Pandhi, You're Different.<br>
 Never imagined this bond would become <i>this strong</i>.<br>
-No therapist needed — because I’ve got <b>you</b>.<br>
+No therapist needed — because I've got <b>you</b>.<br>
 Even without meeting once,<br>
-You’ve made my days brighter.<br>
-Sometimes, I don’t need a solution,<br>
-Just your voice saying, “I’m here.”<br>
-And that’s enough.<br><br>
+You've made my days brighter.<br>
+Sometimes, I don't need a solution,<br>
+Just your voice saying, "I'm here."<br>
+And that's enough.<br><br>
 
-You’re not just special —<br>
-<b>You’re irreplaceable.</b><br><br>
+You're not just special —<br>
+<b>You're irreplaceable.</b><br><br>
 
 No Promises, Just Us<br>
 Remember that deal?<br>
-We said no fake promises like “forever friends.”<br>
+We said no fake promises like "forever friends."<br>
 We just agreed to <i>be real</i> with each other.<br>
 And look — 4 years later,<br>
 We're still here.<br><br>
 
-Let’s not count the years.<br>
-Let’s count the moments.<br>
+Let's not count the years.<br>
+Let's count the moments.<br>
 Till the last day of this friendship.<br><br>
 
 Just Know This<br>
-You’re not someone I’ll ever forget.<br>
+You're not someone I'll ever forget.<br>
 Not because of what you do,<br>
 But because of <i>who you are</i> to me.<br><br>
 
 Forever or not,<br>
-You’ll always be <b>my special one</b>.
+You'll always be <b>my special one</b>.
 
         </p>
       </div>
@@ -1147,7 +1156,7 @@ You’ll always be <b>my special one</b>.
           <!-- Extra Controls -->
           <div class="extra-controls">
             <div class="volume-section">
-              <span class="volume-icon-main" id="volumeIconMain">🔊</span>
+              <span class="volume-icon-main" id="volumeIconMain">🔇</span>
               <input type="range" class="volume-slider-main" id="volumeSliderMain" min="0" max="100" value="70">
             </div>
             <div class="extra-actions">
@@ -1203,7 +1212,7 @@ You’ll always be <b>my special one</b>.
             <div class="caption-title">The day everything changed.</div>
             <div class="caption-description">
               This is where it all began - our first long call. 
-              It wasn’t just a call — it was the start of something that still means the world to me.
+              It wasn't just a call — it was the start of something that still means the world to me.
 Me, you, and Viggi on conference… and somehow, that moment still lives rent free in my heart 💛 💫
             </div>
           </div>
@@ -1243,7 +1252,7 @@ That day, I realized — even on serious days, you're the peace I never wanna lo
 yet we stayed up talking like we lived next door.
 No big reason, just a normal night — but we made it feel special.
 And, sometimes those random talks hit harder than anything.
-I didn’t need a reason to smile — I had you 🫶🌙
+I didn't need a reason to smile — I had you 🫶🌙
             </div>
           </div>
         </div>
@@ -1256,8 +1265,8 @@ I didn’t need a reason to smile — I had you 🫶🌙
     <section class="section">
       <h2>💭 100+ Reasons <br> Why You're My <br>Best Friend</h2>
       <ul class="love-list">
-        <li class="love-item">💫 I don’t count reasons — I count memories with you.</li>
-        <li class="love-item">🫀 *You’re not my best friend because of reasons,<br>you’re my best friend because you’re you. 💜</li>
+        <li class="love-item">💫 I don't count reasons — I count memories with you.</li>
+        <li class="love-item">🫀 *You're not my best friend because of reasons,<br>you're my best friend because you're you. 💜</li>
       </ul>
     </section>
 
@@ -1309,7 +1318,7 @@ even without meeting once.
 
 Given with all my heart,
 by <b>Hareharan 💜</b>
-to the one who’s more than a best friend —
+to the one who's more than a best friend —
 my person. 💜✨
       </p>
       <button class="btn" onclick="closeModal()">Accept with Love 💖</button>
@@ -1349,13 +1358,19 @@ my person. 💜✨
       }
 
       setupAudio() {
-        // Set initial volume
+        // Set initial volume and muted state
         this.audio.volume = this.volumeSliderMain.value / 100;
+        this.audio.muted = true; // Start muted for autoplay compliance
+        
+        // Update volume icon to show muted initially
+        this.updateVolumeIcon(0);
 
         // Play button functionality
         this.playButtonMain.addEventListener('click', () => {
           this.hasUserInteracted = true;
           this.hideAutoplayNotification();
+          this.audio.muted = false; // Unmute when user clicks play
+          this.updateVolumeIcon(this.audio.volume);
           this.togglePlayPause();
         });
 
@@ -1363,19 +1378,27 @@ my person. 💜✨
         this.volumeSliderMain.addEventListener('input', (e) => {
           const volume = e.target.value / 100;
           this.audio.volume = volume;
-          this.updateVolumeIcon(volume);
+          if (this.hasUserInteracted) {
+            this.audio.muted = volume === 0;
+          }
+          this.updateVolumeIcon(this.audio.muted ? 0 : volume);
         });
 
         // Volume icon click to mute/unmute
         this.volumeIconMain.addEventListener('click', () => {
-          if (this.audio.volume > 0) {
-            this.audio.volume = 0;
-            this.volumeSliderMain.value = 0;
-            this.updateVolumeIcon(0);
-          } else {
+          if (!this.hasUserInteracted) {
+            this.hasUserInteracted = true;
+            this.hideAutoplayNotification();
+          }
+          
+          if (this.audio.muted || this.audio.volume === 0) {
+            this.audio.muted = false;
             this.audio.volume = 0.7;
             this.volumeSliderMain.value = 70;
             this.updateVolumeIcon(0.7);
+          } else {
+            this.audio.muted = true;
+            this.updateVolumeIcon(0);
           }
         });
 
@@ -1425,30 +1448,32 @@ my person. 💜✨
       }
 
       setupAutoplay() {
-        // Show notification initially
+        // Show notification after a delay
         setTimeout(() => {
           if (!this.hasUserInteracted) {
             this.showAutoplayNotification();
           }
-        }, 3000);
+        }, 1000);
 
-        // Try to auto-play on any user interaction
-        const enableAutoplay = () => {
+        // Enable sound on any user interaction
+        const enableSound = () => {
           if (!this.hasUserInteracted) {
             this.hasUserInteracted = true;
             this.hideAutoplayNotification();
-            this.audio.play().then(() => {
-              this.playButtonMain.textContent = '⏸️';
-              this.isPlaying = true;
-            }).catch(() => {
-              // Auto-play failed, user needs to click play
-            });
+            this.audio.muted = false; // Unmute the audio
+            this.updateVolumeIcon(this.audio.volume);
+            if (!this.isPlaying) {
+              this.audio.play().then(() => {
+                this.playButtonMain.textContent = '⏸️';
+                this.isPlaying = true;
+              }).catch(console.log);
+            }
           }
         };
 
-        document.addEventListener('click', enableAutoplay, { once: true });
-        document.addEventListener('keydown', enableAutoplay, { once: true });
-        document.addEventListener('scroll', enableAutoplay, { once: true });
+        document.addEventListener('click', enableSound, { once: true });
+        document.addEventListener('keydown', enableSound, { once: true });
+        document.addEventListener('touchstart', enableSound, { once: true });
       }
 
       togglePlayPause() {
@@ -1486,7 +1511,7 @@ my person. 💜✨
       }
 
       updateVolumeIcon(volume) {
-        if (volume === 0) {
+        if (volume === 0 || this.audio.muted) {
           this.volumeIconMain.textContent = '🔇';
         } else if (volume < 0.5) {
           this.volumeIconMain.textContent = '🔉';
@@ -1497,6 +1522,15 @@ my person. 💜✨
 
       showAutoplayNotification() {
         this.autoplayNotification.classList.add('show');
+        
+        // Make the entire notification clickable
+        this.autoplayNotification.addEventListener('click', () => {
+          this.hasUserInteracted = true;
+          this.hideAutoplayNotification();
+          this.audio.muted = false;
+          this.updateVolumeIcon(this.audio.volume);
+          this.togglePlayPause();
+        });
       }
 
       hideAutoplayNotification() {
